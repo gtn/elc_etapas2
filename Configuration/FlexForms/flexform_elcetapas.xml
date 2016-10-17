@@ -1,0 +1,71 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Function</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Select function</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Etapas list</numIndex>
+										<numIndex index="1">Etapas->list</numIndex>
+									</numIndex>
+									<numIndex index="1">
+										<numIndex index="0">Etapas detail</numIndex>
+										<numIndex index="1">Etapas->show</numIndex>
+									</numIndex>
+									<numIndex index="2">
+										<numIndex index="0">Etapas filters</numIndex>
+										<numIndex index="1">Etapas->filters</numIndex>
+									</numIndex>
+									<numIndex index="3">
+										<numIndex index="0">Etapas short list</numIndex>
+										<numIndex index="1">Etapas->shortList</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+				</el>
+			</ROOT>
+		</sDEF>
+		<shortListConfiguration>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Additional configuration</sheetTitle>
+					<displayCond><![CDATA[FIELD:sDEF.switchableControllerActions:=:Etapas->shortList]]></displayCond>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.maxNumbersOfRecords>
+						<TCEforms>
+							<label>Max records displayed:</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.maxNumbersOfRecords>
+					<settings.onlyTop>
+						<TCEforms>
+							
+							<label>Show only Top eTapas:</label>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.onlyTop>
+				</el>
+			</ROOT>
+		</shortListConfiguration>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,37 @@
+config.tx_extbase.persistence.classes.GTN\ElcEtapas2\Domain\Model\Etapas {
+    #plugin.tx_elcetapas2_elcetapas.persistence.classes.GTN\ElcEtapas2\Domain\Model\Etapas {
+    mapping {
+        tableName = elc_etapas
+        recordType >
+        columns {
+            			name.mapOnProperty = name
+            			email.mapOnProperty = email
+            			erstelltvonschule.mapOnProperty = erstelltvonschule
+            			erproptvonschule.mapOnProperty = erproptvonschule
+            			faecher.mapOnProperty = faecher
+            			schulstufe.mapOnProperty = schulstufe
+            			vorkenntnisse.mapOnProperty = vorkenntnisse
+            			technischevoraussetzungen.mapOnProperty = technischevoraussetzungen
+            			handlungsdimensionen.mapOnProperty = handlungsdimensionen
+            			relevantedeskriptoren.mapOnProperty = relevantedeskriptoren
+            			zeitbedarf.mapOnProperty = zeitbedarf
+            			message.mapOnProperty = message
+            			lizenstype.mapOnProperty = lizenstype
+            			file.mapOnProperty = file
+            			pid.mapOnProperty = pid
+            			deleted.mapOnProperty = deleted
+            			hidden.mapOnProperty = hidden
+            			kurzbezeichnung.mapOnProperty = kurzbezeichnung
+            			position.mapOnProperty = position
+            			relevantedeskriptoren_link.mapOnProperty = relevantedeskriptorenLink
+            			weblink.mapOnProperty = weblink
+            			materialmedienbedarf.mapOnProperty = materialmedienbedarf
+            			namensnennung_type.mapOnProperty = namensnennungType
+            			kommerziellenutzung_type.mapOnProperty = kommerziellenutzungType
+            			bearbeitung_type.mapOnProperty = bearbeitungType
+            			weitergabe_type.mapOnProperty = weitergabeType
+            			lizensaccept.mapOnProperty = lizensaccept
+            			sourcename.mapOnProperty = sourcename
+        }
+    }
+}

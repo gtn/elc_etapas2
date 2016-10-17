@@ -1,0 +1,53 @@
+ul#breadcrumb li {
+	display:inline;
+	color: #DA7506;
+	cursor: pointer
+}
+
+#relevantedeskriptoren_link {
+	display: none;
+}
+
+#edugroupdata {
+	width: 90%;
+	margin-left: 10px;
+}
+
+.record_list td, .record_list th {
+    text-align: left;
+    padding: 10px;
+}
+
+.record_list td, .record_list th {
+	font-size: 12px; 
+	padding: 10px;
+}
+
+.record_list td ul {
+	padding: 0px;
+    margin-left: 5px;
+}
+
+.record_list td li {
+	line-height: 9px;
+}
+
+.record_list td.title {
+    font-weight: bold;
+}
+
+.record_list div.deskriptors  {
+    width:60px;
+    background-color:#f1f1f1;
+    border:1px solid #999;
+    border-radius: 2px;
+    padding:1px; 
+    cursor: default;
+}
+
+.record_list div.deskriptors  span{
+    color:#444;
+    white-space:nowrap;
+    display:block; 
+    text-align:center
+}

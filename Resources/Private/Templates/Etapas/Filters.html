@@ -1,0 +1,102 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<!-- Filter -->
+    <div id="sidebar-wrapper">
+        <f:form class="edufilter" name="filter" object="{filter}" enctype="multipart/form-data" id="formFilter"  additionalAttributes="{data-ajaxUrl:'{f:uri.action(action: \'listAjaxFiltered\', pageType:568)}'}">
+        
+            <div class="edufiltergroup">
+                <legend><a class="collapsepoint <f:if condition='{filter.schulstufe}'><f:then></f:then><f:else>collapsed</f:else></f:if>" data-toggle="collapse" href="#etapasfilter_schulstufe" aria-expanded="false" aria-controls="etapasfilter_schulstufe">Schulstufe <i class="icon ion-chevron-down"></i></a></legend>
+                <div class="collapse <f:if condition='{filter.schulstufe}'>in</f:if>" id="etapasfilter_schulstufe">
+                    <f:for each="{allSchulstufe}" as="schulstufe">
+                        <f:if condition="{schulstufe.title} > 0">
+                            <div class="checkbox">
+                                <label>
+                                    <f:form.checkbox class="autoSubmitForm" id="filter_schulstufe_{schulstufe.title}" property="schulstufe.{schulstufe.title}" value="{schulstufe.title}"  />
+                                    {schulstufe.title}
+                                </label>
+                            </div>
+                        </f:if>
+                    </f:for>
+                </div>
+            </div>
+            
+            <div class="edufiltergroup">
+                <legend><a class="collapsepoint collapsed" data-toggle="collapse" href="#etapasfilter_faecher" aria-expanded="false" aria-controls="etapasfilter_faecher">Fächer <i class="icon ion-chevron-down"></i></a></legend>
+                <div class="collapse in" id="etapasfilter_faecher">
+                    <div class="form-group">
+                        <f:form.select id="filter_faecher" property="faecher" options="{allFaecher}" optionValueField="title" optionLabelField="title" class="form-control filter-input autoSubmitForm" value="{filter.faecher}"  prependOptionLabel=" " sortByOptionLabel="title"/>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="edufiltergroup">
+                <legend><a class="collapsepoint <f:if condition='{filter.handlungsdimensionen}'><f:then></f:then><f:else>collapsed</f:else></f:if>" data-toggle="collapse" href="#etapasfilter_handlungsdimensionen" aria-expanded="false" aria-controls="etapasfilter_handlungsdimensionen">Handlungsdimension<br />(Bloomsche Handlungsebenen) <i class="icon ion-chevron-down"></i></a></legend>
+                <div class="collapse <f:if condition='{filter.handlungsdimensionen}'>in</f:if>" id="etapasfilter_handlungsdimensionen">
+                    <f:for each="{allHandlungsdimensionen}" as="handlungsdimensionen">
+                        <div class="checkbox">
+                            <label>
+                                <f:form.checkbox class="autoSubmitForm" id="filter_handlungsdimensionen_{handlungsdimensionen.id}" property="handlungsdimensionen.{handlungsdimensionen.id}" value="{handlungsdimensionen.title}"  />
+                                {handlungsdimensionen.title}
+                            </label>
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+
+            
+
+            <div class="edufiltergroup">
+                <legend><a class="collapsepoint <f:if condition='{filter.dateFrom}'>
+                                                    <f:then></f:then>
+                                                    <f:else>
+                                                        <f:if condition='{filter.dateTo}'>
+                                                            <f:then></f:then>
+                                                            <f:else>
+                                                                collapsed
+                                                            </f:else>
+                                                        </f:if>
+                                                    </f:else>
+                                                </f:if>" data-toggle="collapse" href="#etapasfilter_dates" aria-expanded="false" aria-controls="etapasfilter_dates">Datum <i class="icon ion-chevron-down"></i></a></legend>
+                <div class="collapse <f:if condition='{filter.dateFrom}'>
+                                                    <f:then>in</f:then>
+                                                    <f:else>
+                                                        <f:if condition='{filter.dateTo}'>
+                                                            in
+                                                        </f:if>
+                                                    </f:else>
+                                                </f:if>" id="etapasfilter_dates">
+                    <div class="form-group">
+                        <label class="sr-only" for="dateFrom">Von</label>
+                        <div class="input-group date">
+                            <f:form.textfield id="dateFrom" property="dateFrom" class="form-control filter-input dateTimePicker" value="{filter.dateFrom}" placeholder="Von"/>
+                            <div class="input-group-addon open-datepicker"><i class="icon ion-calendar"></i></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="dateTo">Bis</label>
+                        <div class="input-group date">
+                            <f:form.textfield id="dateTo" property="dateTo" class="form-control filter-input dateTimePicker" value="{filter.dateTo}" placeholder="Bis"/>
+                            <div class="input-group-addon open-datepicker"><i class="icon ion-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edufiltergroup edufilterbuttons">
+                <f:comment>
+                    <f:form.submit value="Filter anwenden" name="filterSubmit" class="btn btn-default btn-eeducation btn-sm"/>
+                </f:comment>
+                <f:form.button value="Filter entfernen" name="filterClear" class="btn btn-success btn-eeducation btn-sm filterClear" >Filter entfernen</f:form.button>
+            </div>
+
+        </f:form>
+
+    </div><!-- /#sidebar-wrapper -->
+    <!-- / Filter -->
+
+</f:section>
+

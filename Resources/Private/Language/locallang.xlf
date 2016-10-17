@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-06T17:21:50Z" product-name="elc_etapas2">
+		<header/>
+		<body>
+			<trans-unit id="elc_etapas">
+				<source>Etapas</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.erstelltvonschule">
+				<source>Erstelltvonschule</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.erproptvonschule">
+				<source>Erproptvonschule</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.faecher">
+				<source>Faecher</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe">
+				<source>Schulstufe</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.vorkenntnisse">
+				<source>Vorkenntnisse</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.technischevoraussetzungen">
+				<source>Technischevoraussetzungen</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.handlungsdimensionen">
+				<source>Handlungsdimensionen</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.relevantedeskriptoren">
+				<source>Relevantedeskriptoren</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.zeitbedarf">
+				<source>Zeitbedarf</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.lizenstype">
+				<source>Lizenstype</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.file">
+				<source>File</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.kurzbezeichnung">
+				<source>Kurzbezeichnung</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.relevantedeskriptoren_link">
+				<source>Relevantedeskriptoren Link</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.weblink">
+				<source>Weblink</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.materialmedienbedarf">
+				<source>Materialmedienbedarf</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.namensnennung_type">
+				<source>Namensnennung Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.kommerziellenutzung_type">
+				<source>Kommerziellenutzung Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.bearbeitung_type">
+				<source>Bearbeitung Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.weitergabe_type">
+				<source>Weitergabe Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.lizensaccept">
+				<source>Lizensaccept</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.sourcename">
+				<source>Sourcename</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.top">
+				<source>Top eTapas</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-06T17:21:50Z" product-name="elc_etapas2">
+		<header/>
+		<body>
+			<trans-unit id="elc_etapas">
+				<source>Etapas</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.name">
+				<source>Name des Einreichers</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.erstelltvonschule">
+				<source>Erstellt von Schule</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.erproptvonschule">
+				<source>Erprobt von Schule</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.faecher">
+				<source>Fächer</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe">
+				<source>Schulstufe</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.0">
+				<source>5</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.1">
+				<source>6</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.2">
+				<source>7</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.3">
+				<source>8</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.4">
+				<source>9</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.5">
+				<source>10</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.6">
+				<source>11</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.7">
+				<source>12</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.schulstufe.I.8">
+				<source>13</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.vorkenntnisse">
+				<source>Vorkenntnisse u. motivationaler Einstieg</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.technischevoraussetzungen">
+				<source>technische Voraussetzungen</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.handlungsdimensionen">
+				<source>Handlungsdimension (Bloomsche Handlungsebenen)</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.handlungsdimensionen.I.0">
+				<source>Verstehen</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.handlungsdimensionen.I.1">
+				<source>Anwenden</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.handlungsdimensionen.I.2">
+				<source>Reflektieren</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.handlungsdimensionen.I.3">
+				<source>Analysieren</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.relevantedeskriptoren">
+				<source>relevante Deskriptoren - System record</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.zeitbedarf">
+				<source>Zeitbedarf</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.message">
+				<source>Anmerkungen</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.lizenstype">
+				<source>Lizenzierung</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.lizenstype.I.1">
+				<source>Creative Commons cc-by</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.lizenstype.I.2">
+				<source>Creative Commons cc-by-sa</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.Lizenzierung">
+				<source>Lizenzierung</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.file">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.kurzbezeichnung">
+				<source>Kurzbezeichnung</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.relevantedeskriptoren_link">
+				<source>relevante Deskriptoren - System record</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.weblink">
+				<source>Web link</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.materialmedienbedarf">
+				<source>Materialmedienbedarf</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.namensnennung_type">
+				<source>Namensnennung Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.kommerziellenutzung_type">
+				<source>Kommerziellenutzung Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.bearbeitung_type">
+				<source>Bearbeitung Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.weitergabe_type">
+				<source>Weitergabe Type</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.lizensaccept">
+				<source>Lizensaccept</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.sourcename">
+				<source>Sourcename</source>
+			</trans-unit>
+			<trans-unit id="elc_etapas.top">
+				<source>Top eTapas</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

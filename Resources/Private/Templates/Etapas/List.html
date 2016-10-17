@@ -1,0 +1,14 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <f:render partial="Etapas/Listing" arguments="{_all}"></f:render>
+
+    <f:if condition="{filterActivated}">
+        <script>
+            var filterActivated = true;
+        </script>
+    </f:if>
+</f:section>
+

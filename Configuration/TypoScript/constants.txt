@@ -1,0 +1,15 @@
+
+plugin.tx_elcetapas2_elcetapas {
+	view {
+		# cat=plugin.tx_elcetapas2_elcetapas/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:elc_etapas2/Resources/Private/Templates/
+		# cat=plugin.tx_elcetapas2_elcetapas/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:elc_etapas2/Resources/Private/Partials/
+		# cat=plugin.tx_elcetapas2_elcetapas/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:elc_etapas2/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_elcetapas2_elcetapas//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

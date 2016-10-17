@@ -1,0 +1,55 @@
+
+plugin.tx_elcetapas2_elcetapas {
+	view {
+		templateRootPaths.0 = {$plugin.tx_elcetapas2_elcetapas.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_elcetapas2_elcetapas.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_elcetapas2_elcetapas.view.layoutRootPath}
+		widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = {$plugin.tx_elcetapas2_elcetapas.view.templateRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_elcetapas2_elcetapas.persistence.storagePid}
+	}
+	settings {
+		etapas {
+			pathToUploadedFiles = fileadmin/etapas_upload/
+			listPage = 76
+			detailPage = 77
+		}
+	}
+	mvc.callDefaultActionIfActionCantBeResolved = 1
+}
+
+page.includeCSS.568 = fileadmin/eEducation2016/Resources/Public/StyleSheets/bootstrap-datepicker3.css
+page.includeJSFooter.568 = fileadmin/eEducation2016/Resources/Public/JavaScript/bootstrap-datepicker.min.js
+page.includeJSFooter.569 = fileadmin/eEducation2016/Resources/Public/JavaScript/spin.min.js
+
+filterAjax = PAGE
+filterAjax {
+	typeNum = 568
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders = Content-type:application/html|Cache-Control:no-cache, must-revalidate, max-age=0|Pragma:no-cache
+		xhtml_cleaning = 0
+		admPanel = 0
+	}
+
+	10 = USER
+	10 {
+		userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+		pluginName = Elcetapas
+		extensionName = ElcEtapas2
+		vendorName = GTN
+		switchableControllerActions {
+			Etapas {
+				1 = listAjaxFiltered
+#				1 = list
+			}
+		}
+		controller = Etapas
+		action = listAjaxFiltered
+	}
+}
+
+
+
+

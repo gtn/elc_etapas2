@@ -1,0 +1,164 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <f:if condition="{etapas}">
+    <f:then>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Reflektieren'">
+                {v:variable.set(name: 'bloom', value: 'bloom-1')}
+            </f:if>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Anwenden'">
+                {v:variable.set(name: 'bloom', value: 'bloom-2')}
+            </f:if>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Verstehen'">
+                {v:variable.set(name: 'bloom', value: 'bloom-3')}
+            </f:if>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Analysieren'">
+                {v:variable.set(name: 'bloom', value: 'bloom-4')}
+            </f:if>
+
+    <div class="etapdetail">
+
+        <h2 class="{bloom}">{etapas.kurzbezeichnung}
+            <div class="eedetapadet-bloom" data-toggle="tooltip" data-placement="left" title="{etapas.handlungsdimensionen}" data-original-title="{etapas.handlungsdimensionen}"><img src="fileadmin/eEducation2016/Resources/Public/Images/{bloom}.png" alt="{etapas.handlungsdimensionen}" title="{etapas.handlungsdimensionen}" /></div>
+        </h2>
+
+	<f:if condition="{etapas.files}">
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Downloads</b>
+            </div>
+            <div class="col-xs-9">
+                <f:for each="{etapas.files}" as="file">
+                    <a href="{file.path}">{file.name}</a><br />
+                </f:for>
+            </div>
+        </div>
+	</f:if>
+
+	<f:if condition="{etapas.weblink}">
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Weblink</b>
+            </div>
+            <div class="col-xs-9">
+		<f:link.external uri="{etapas.weblink}" target="_blank">{etapas.weblink}</f:link.external>                 
+            </div>
+        </div>
+	</f:if>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Fächer</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.faecher}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Schulstufe</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.schulstufe}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Erstellt von Schule</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.erstelltvonschule}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Erprobt von Schule</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.erproptvonschule}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Vorkenntnisse u. motivationaler Einstieg</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.vorkenntnisse}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>technische Voraussetzungen</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.technischevoraussetzungen}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Handlungsdimension</b><br />(Bloomsche Handlungsebenen)
+            </div>
+            <div class="col-xs-9">
+                {etapas.handlungsdimensionen}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>relevante Deskriptoren</b>
+            </div>
+            <div class="col-xs-9">
+                {f:format.nl2br(value: '{etapas.relevantedeskriptoren}')}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Zeitbedarf </b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.zeitbedarf}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Anmerkungen</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.message}
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-3 etapdetlabel">
+                <b>Lizenzierung</b>
+            </div>
+            <div class="col-xs-9">
+                {etapas.lizenstype}
+            </div>
+        </div>
+
+    </div>
+    </f:then>
+    <f:else>
+        <div class="etapdetail">
+            <div class="error col-sm-12">Für dieses eTapa sind keine Daten vorhanden!</div>
+        </div>
+    </f:else>
+    </f:if>
+
+    <div class="news-backlink-wrap">
+        <a class="btn btn-default btn-eeducation btn-sm btn-green" href="{f:uri.typolink(parameter:'{settings.etapas.listPage}')}"> Zurück </a>
+    </div>
+
+</f:section>
+

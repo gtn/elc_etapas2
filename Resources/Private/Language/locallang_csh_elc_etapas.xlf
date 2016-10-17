@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-09-06T17:21:50Z" product-name="elc_etapas2">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="erstelltvonschule.description">
+				<source>erstelltvonschule</source>
+			</trans-unit>
+			<trans-unit id="erproptvonschule.description">
+				<source>erproptvonschule</source>
+			</trans-unit>
+			<trans-unit id="faecher.description">
+				<source>faecher</source>
+			</trans-unit>
+			<trans-unit id="schulstufe.description">
+				<source>schulstufe</source>
+			</trans-unit>
+			<trans-unit id="vorkenntnisse.description">
+				<source>vorkenntnisse</source>
+			</trans-unit>
+			<trans-unit id="technischevoraussetzungen.description">
+				<source>technischevoraussetzungen</source>
+			</trans-unit>
+			<trans-unit id="handlungsdimensionen.description">
+				<source>handlungsdimensionen</source>
+			</trans-unit>
+			<trans-unit id="relevantedeskriptoren.description">
+				<source>relevantedeskriptoren</source>
+			</trans-unit>
+			<trans-unit id="zeitbedarf.description">
+				<source>zeitbedarf</source>
+			</trans-unit>
+			<trans-unit id="message.description">
+				<source>message</source>
+			</trans-unit>
+			<trans-unit id="lizenstype.description">
+				<source>lizenstype</source>
+			</trans-unit>
+			<trans-unit id="file.description">
+				<source>file</source>
+			</trans-unit>
+			<trans-unit id="kurzbezeichnung.description">
+				<source>kurzbezeichnung</source>
+			</trans-unit>
+			<trans-unit id="position.description">
+				<source>position</source>
+			</trans-unit>
+			<trans-unit id="relevantedeskriptoren_link.description">
+				<source>relevantedeskriptorenLink</source>
+			</trans-unit>
+			<trans-unit id="weblink.description">
+				<source>weblink</source>
+			</trans-unit>
+			<trans-unit id="materialmedienbedarf.description">
+				<source>materialmedienbedarf</source>
+			</trans-unit>
+			<trans-unit id="namensnennung_type.description">
+				<source>namensnennungType</source>
+			</trans-unit>
+			<trans-unit id="kommerziellenutzung_type.description">
+				<source>kommerziellenutzungType</source>
+			</trans-unit>
+			<trans-unit id="bearbeitung_type.description">
+				<source>bearbeitungType</source>
+			</trans-unit>
+			<trans-unit id="weitergabe_type.description">
+				<source>weitergabeType</source>
+			</trans-unit>
+			<trans-unit id="lizensaccept.description">
+				<source>lizensaccept</source>
+			</trans-unit>
+			<trans-unit id="sourcename.description">
+				<source>sourcename</source>
+			</trans-unit>
+			<trans-unit id="top.description">
+				<source>Top eTapas</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

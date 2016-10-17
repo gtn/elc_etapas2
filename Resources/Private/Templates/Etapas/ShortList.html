@@ -1,0 +1,39 @@
+{namespace v=FluidTYPO3\Vhs\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <div class="row eedetapas">
+
+            <f:for each="{etapases}" as="etapas">
+
+            <f:if condition="{etapas.handlungsdimensionen} == 'Reflektieren'">
+                {v:variable.set(name: 'bloom', value: 'bloom-1')}
+            </f:if>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Anwenden'">
+                {v:variable.set(name: 'bloom', value: 'bloom-2')}
+            </f:if>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Verstehen'">
+                {v:variable.set(name: 'bloom', value: 'bloom-3')}
+            </f:if>
+            <f:if condition="{etapas.handlungsdimensionen} == 'Analysieren'">
+                {v:variable.set(name: 'bloom', value: 'bloom-4')}
+            </f:if>
+
+                <div class="col-xs-12 col-sm-4">
+                    <a href="{f:uri.action(action: 'show', pageUid: '{settings.etapas.detailPage}', arguments: {etapas: etapas} )}">
+                        <div class="eedetapa {bloom}">
+                            <h3><f:format.crop maxCharacters="115">{etapas.kurzbezeichnung}</f:format.crop></h3>
+                            <div class="eedetapa-subject">{etapas.faecher}
+                                <br />Schulstufe: {etapas.schulstufe}</div>
+                            <div class="eedetapa-bloom" data-toggle="tooltip" data-placement="left" title="{etapas.handlungsdimensionen}" data-original-title="{etapas.handlungsdimensionen}"><img src="fileadmin/eEducation2016/Resources/Public/Images/{bloom}.png" alt="{etapas.handlungsdimensionen}" title="{etapas.handlungsdimensionen}" /></div>
+                        </div>
+                    </a>
+                </div>
+
+            </f:for>
+    </div>
+
+
+</f:section>
+
