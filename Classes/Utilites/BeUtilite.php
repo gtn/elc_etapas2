@@ -1,5 +1,5 @@
 <?php
-namespace GTN\ElcEtapas2\Utilites;
+namespace Gtn\ElcEtapas2\Utilites;
 
 
 /***************************************************************

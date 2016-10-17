@@ -1,5 +1,5 @@
 <?php
-namespace GTN\ElcEtapas2\Controller;
+namespace Gtn\ElcEtapas2\Controller;
 
 
 /***************************************************************
@@ -36,7 +36,7 @@ class EtapasController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * etapasRepository
      * 
-     * @var \GTN\ElcEtapas2\Domain\Repository\EtapasRepository
+     * @var \Gtn\ElcEtapas2\Domain\Repository\EtapasRepository
      * @inject
      */
     protected $etapasRepository = NULL;
@@ -98,10 +98,10 @@ class EtapasController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * action create
      * 
-     * @param \GTN\ElcEtapas2\Domain\Model\Etapas $newEtapas
+     * @param \Gtn\ElcEtapas2\Domain\Model\Etapas $newEtapas
      * @return void
      */
-    public function createAction(\GTN\ElcEtapas2\Domain\Model\Etapas $newEtapas)
+    public function createAction(\Gtn\ElcEtapas2\Domain\Model\Etapas $newEtapas)
     {
         $this->addFlashMessage('The object was created. Please be aware that this action is publicly accessible unless you implement an access check. See http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->etapasRepository->add($newEtapas);
@@ -111,11 +111,11 @@ class EtapasController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * action edit
      * 
-     * @param \GTN\ElcEtapas2\Domain\Model\Etapas $etapas
+     * @param \Gtn\ElcEtapas2\Domain\Model\Etapas $etapas
      * @ignorevalidation $etapas
      * @return void
      */
-    public function editAction(\GTN\ElcEtapas2\Domain\Model\Etapas $etapas)
+    public function editAction(\Gtn\ElcEtapas2\Domain\Model\Etapas $etapas)
     {
         $this->view->assign('etapas', $etapas);
     }
@@ -123,10 +123,10 @@ class EtapasController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * action update
      * 
-     * @param \GTN\ElcEtapas2\Domain\Model\Etapas $etapas
+     * @param \Gtn\ElcEtapas2\Domain\Model\Etapas $etapas
      * @return void
      */
-    public function updateAction(\GTN\ElcEtapas2\Domain\Model\Etapas $etapas)
+    public function updateAction(\Gtn\ElcEtapas2\Domain\Model\Etapas $etapas)
     {
         $this->addFlashMessage('The object was updated. Please be aware that this action is publicly accessible unless you implement an access check. See http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->etapasRepository->update($etapas);
@@ -136,10 +136,10 @@ class EtapasController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControlle
     /**
      * action delete
      * 
-     * @param \GTN\ElcEtapas2\Domain\Model\Etapas $etapas
+     * @param \Gtn\ElcEtapas2\Domain\Model\Etapas $etapas
      * @return void
      */
-    public function deleteAction(\GTN\ElcEtapas2\Domain\Model\Etapas $etapas)
+    public function deleteAction(\Gtn\ElcEtapas2\Domain\Model\Etapas $etapas)
     {
         $this->addFlashMessage('The object was deleted. Please be aware that this action is publicly accessible unless you implement an access check. See http://wiki.typo3.org/T3Doc/Extension_Builder/Using_the_Extension_Builder#1._Model_the_domain', '', \TYPO3\CMS\Core\Messaging\AbstractMessage::ERROR);
         $this->etapasRepository->remove($etapas);

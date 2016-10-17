@@ -1,5 +1,5 @@
-config.tx_extbase.persistence.classes.GTN\ElcEtapas2\Domain\Model\Etapas {
-    #plugin.tx_elcetapas2_elcetapas.persistence.classes.GTN\ElcEtapas2\Domain\Model\Etapas {
+config.tx_extbase.persistence.classes.Gtn\ElcEtapas2\Domain\Model\Etapas {
+    #plugin.tx_elcetapas2_elcetapas.persistence.classes.Gtn\ElcEtapas2\Domain\Model\Etapas {
     mapping {
         tableName = elc_etapas
         recordType >

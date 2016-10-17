@@ -38,7 +38,7 @@ filterAjax {
 		userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
 		pluginName = Elcetapas
 		extensionName = ElcEtapas2
-		vendorName = GTN
+		vendorName = Gtn
 		switchableControllerActions {
 			Etapas {
 				1 = listAjaxFiltered

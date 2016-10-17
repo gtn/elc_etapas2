@@ -4,13 +4,13 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-	'GTN.' . $_EXTKEY,
+	'Gtn.' . $_EXTKEY,
 	'Elcetapas',
 	array(
-		'Etapas' => 'list, show, filters, shortList, listAjaxFiltered',
+		'Etapas' => 'list,show,filters,shortList,listAjaxFiltered',
 	),
 	// non-cacheable actions
 	array(
-		'Etapas' => 'list, show, filters, shortList, listAjaxFiltered',
+		'Etapas' => 'list,show,filters,shortList,listAjaxFiltered',
 	)
 );

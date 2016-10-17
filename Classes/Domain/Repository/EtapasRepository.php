@@ -1,5 +1,5 @@
 <?php
-namespace GTN\ElcEtapas2\Domain\Repository;
+namespace Gtn\ElcEtapas2\Domain\Repository;
 
 
 /***************************************************************

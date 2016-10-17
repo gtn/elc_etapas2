@@ -1,5 +1,5 @@
 <?php
-namespace GTN\ElcEtapas2\Tests\Unit\Controller;
+namespace Gtn\ElcEtapas2\Tests\Unit\Controller;
 /***************************************************************
  *  Copyright notice
  *
@@ -24,20 +24,20 @@ namespace GTN\ElcEtapas2\Tests\Unit\Controller;
  ***************************************************************/
 
 /**
- * Test case for class GTN\ElcEtapas2\Controller\EtapasController.
+ * Test case for class Gtn\ElcEtapas2\Controller\EtapasController.
  *
  */
 class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
 
 	/**
-	 * @var \GTN\ElcEtapas2\Controller\EtapasController
+	 * @var \Gtn\ElcEtapas2\Controller\EtapasController
 	 */
 	protected $subject = NULL;
 
 	public function setUp()
 	{
-		$this->subject = $this->getMock('GTN\\ElcEtapas2\\Controller\\EtapasController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
+		$this->subject = $this->getMock('Gtn\\ElcEtapas2\\Controller\\EtapasController', array('redirect', 'forward', 'addFlashMessage'), array(), '', FALSE);
 	}
 
 	public function tearDown()
@@ -53,7 +53,7 @@ class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 
 		$allEtapass = $this->getMock('TYPO3\\CMS\\Extbase\\Persistence\\ObjectStorage', array(), array(), '', FALSE);
 
-		$etapasRepository = $this->getMock('GTN\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('findAll'), array(), '', FALSE);
+		$etapasRepository = $this->getMock('Gtn\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('findAll'), array(), '', FALSE);
 		$etapasRepository->expects($this->once())->method('findAll')->will($this->returnValue($allEtapass));
 		$this->inject($this->subject, 'etapasRepository', $etapasRepository);
 
@@ -69,7 +69,7 @@ class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	 */
 	public function showActionAssignsTheGivenEtapasToView()
 	{
-		$etapas = new \GTN\ElcEtapas2\Domain\Model\Etapas();
+		$etapas = new \Gtn\ElcEtapas2\Domain\Model\Etapas();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$this->inject($this->subject, 'view', $view);
@@ -83,9 +83,9 @@ class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	 */
 	public function createActionAddsTheGivenEtapasToEtapasRepository()
 	{
-		$etapas = new \GTN\ElcEtapas2\Domain\Model\Etapas();
+		$etapas = new \Gtn\ElcEtapas2\Domain\Model\Etapas();
 
-		$etapasRepository = $this->getMock('GTN\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('add'), array(), '', FALSE);
+		$etapasRepository = $this->getMock('Gtn\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('add'), array(), '', FALSE);
 		$etapasRepository->expects($this->once())->method('add')->with($etapas);
 		$this->inject($this->subject, 'etapasRepository', $etapasRepository);
 
@@ -97,7 +97,7 @@ class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	 */
 	public function editActionAssignsTheGivenEtapasToView()
 	{
-		$etapas = new \GTN\ElcEtapas2\Domain\Model\Etapas();
+		$etapas = new \Gtn\ElcEtapas2\Domain\Model\Etapas();
 
 		$view = $this->getMock('TYPO3\\CMS\\Extbase\\Mvc\\View\\ViewInterface');
 		$this->inject($this->subject, 'view', $view);
@@ -111,9 +111,9 @@ class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	 */
 	public function updateActionUpdatesTheGivenEtapasInEtapasRepository()
 	{
-		$etapas = new \GTN\ElcEtapas2\Domain\Model\Etapas();
+		$etapas = new \Gtn\ElcEtapas2\Domain\Model\Etapas();
 
-		$etapasRepository = $this->getMock('GTN\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('update'), array(), '', FALSE);
+		$etapasRepository = $this->getMock('Gtn\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('update'), array(), '', FALSE);
 		$etapasRepository->expects($this->once())->method('update')->with($etapas);
 		$this->inject($this->subject, 'etapasRepository', $etapasRepository);
 
@@ -125,9 +125,9 @@ class EtapasControllerTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 	 */
 	public function deleteActionRemovesTheGivenEtapasFromEtapasRepository()
 	{
-		$etapas = new \GTN\ElcEtapas2\Domain\Model\Etapas();
+		$etapas = new \Gtn\ElcEtapas2\Domain\Model\Etapas();
 
-		$etapasRepository = $this->getMock('GTN\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('remove'), array(), '', FALSE);
+		$etapasRepository = $this->getMock('Gtn\\ElcEtapas2\\Domain\\Repository\\EtapasRepository', array('remove'), array(), '', FALSE);
 		$etapasRepository->expects($this->once())->method('remove')->with($etapas);
 		$this->inject($this->subject, 'etapasRepository', $etapasRepository);
 

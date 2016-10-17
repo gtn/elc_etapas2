@@ -147,7 +147,7 @@ return array(
 				'wizards' => array(
 					'specialWizard' => array(
 						'type' => 'userFunc',
-						'userFunc' => 'GTN\\ElcEtapas2\\Utilites\\BeUtilite->descriptorSelectWizard',
+						'userFunc' => 'Gtn\\ElcEtapas2\\Utilites\\BeUtilite->descriptorSelectWizard',
 					)
 				),
 			)
@@ -218,7 +218,7 @@ return array(
 				'wizards' => array(
 					'specialWizard' => array(
 						'type' => 'userFunc',
-						'userFunc' => 'GTN\\ElcEtapas2\\Utilites\\BeUtilite->filelinksWizard',
+						'userFunc' => 'Gtn\\ElcEtapas2\\Utilites\\BeUtilite->filelinksWizard',
 					)
 				)
 			)

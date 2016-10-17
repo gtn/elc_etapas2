@@ -5,23 +5,10 @@
 
     <f:if condition="{etapas}">
     <f:then>
-            <f:if condition="{etapas.handlungsdimensionen} == 'Reflektieren'">
-                {v:variable.set(name: 'bloom', value: 'bloom-1')}
-            </f:if>
-            <f:if condition="{etapas.handlungsdimensionen} == 'Anwenden'">
-                {v:variable.set(name: 'bloom', value: 'bloom-2')}
-            </f:if>
-            <f:if condition="{etapas.handlungsdimensionen} == 'Verstehen'">
-                {v:variable.set(name: 'bloom', value: 'bloom-3')}
-            </f:if>
-            <f:if condition="{etapas.handlungsdimensionen} == 'Analysieren'">
-                {v:variable.set(name: 'bloom', value: 'bloom-4')}
-            </f:if>
-
     <div class="etapdetail">
 
-        <h2 class="{bloom}">{etapas.kurzbezeichnung}
-            <div class="eedetapadet-bloom" data-toggle="tooltip" data-placement="left" title="{etapas.handlungsdimensionen}" data-original-title="{etapas.handlungsdimensionen}"><img src="fileadmin/eEducation2016/Resources/Public/Images/{bloom}.png" alt="{etapas.handlungsdimensionen}" title="{etapas.handlungsdimensionen}" /></div>
+        <h2 class="{etapas.bloom}">{etapas.kurzbezeichnung}
+            <div class="eedetapadet-bloom" data-toggle="tooltip" data-placement="left" title="{etapas.handlungsdimensionen}" data-original-title="{etapas.handlungsdimensionen}"><img src="fileadmin/eEducation2016/Resources/Public/Images/{etapas.bloom}.png" alt="{etapas.handlungsdimensionen}" title="{etapas.handlungsdimensionen}" /></div>
         </h2>
 
 	<f:if condition="{etapas.files}">

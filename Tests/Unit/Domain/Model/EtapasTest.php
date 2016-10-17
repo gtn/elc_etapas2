@@ -1,6 +1,6 @@
 <?php
 
-namespace GTN\ElcEtapas2\Tests\Unit\Domain\Model;
+namespace Gtn\ElcEtapas2\Tests\Unit\Domain\Model;
 
 /***************************************************************
  *  Copyright notice
@@ -27,7 +27,7 @@ namespace GTN\ElcEtapas2\Tests\Unit\Domain\Model;
  ***************************************************************/
 
 /**
- * Test case for class \GTN\ElcEtapas2\Domain\Model\Etapas.
+ * Test case for class \Gtn\ElcEtapas2\Domain\Model\Etapas.
  *
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
@@ -36,13 +36,13 @@ namespace GTN\ElcEtapas2\Tests\Unit\Domain\Model;
 class EtapasTest extends \TYPO3\CMS\Core\Tests\UnitTestCase
 {
 	/**
-	 * @var \GTN\ElcEtapas2\Domain\Model\Etapas
+	 * @var \Gtn\ElcEtapas2\Domain\Model\Etapas
 	 */
 	protected $subject = NULL;
 
 	public function setUp()
 	{
-		$this->subject = new \GTN\ElcEtapas2\Domain\Model\Etapas();
+		$this->subject = new \Gtn\ElcEtapas2\Domain\Model\Etapas();
 	}
 
 	public function tearDown()
